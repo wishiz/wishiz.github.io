@@ -1,0 +1,64 @@
+body{
+    background: rgb(111,30,30);
+    background: radial-gradient(circle, rgba(111,30,30,1) 0%, rgba(23,4,52,1) 77%);
+}
+
+hr{
+    margin-top: 80px;
+    margin-bottom: 0px;
+    color: #e9e2d0;
+
+}
+
+.about-me{
+    color: #e9e2d0;
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    white-space: pre;
+    letter-spacing: 2px;
+    margin-top:50px;
+}
+
+.black-box{
+    margin: 10rem 35rem;
+    height: 40rem;
+    border: 1px solid #e9e2d0;
+    background-color: black;
+}
+
+.contact{
+    text-align:center;
+}
+
+.fa-telegram-plane{
+    width:50px;
+}
+
+a{
+    color: #e9e2d0;
+    font-size: 3rem;
+    letter-spacing: 4rem;
+}
+
+a:hover{
+    color: grey;
+}
+
+.my-img{
+    border-radius: 50%;
+    width: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-name{
+    color: #e9e2d0;
+    font-family: 'Poiret One', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin:80px auto 50px;
+}
+
+
