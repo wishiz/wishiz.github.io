@@ -1,0 +1,92 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Common */
+.img-cover {
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Mixins */
+@mixin center {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* ----- */
+
+.content-wrapper {
+  max-width: 1170px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.info-block {
+  margin-right: 32px;
+
+  &__name {
+    font-family: "Poiret One", cursive;
+    font-size: 40px;
+    margin-bottom: 32px;
+    text-align: right;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      font-size: 24px;
+      color: #fff;
+      background-color: #a3b9c6;
+      height: 50px;
+      width: 50px;
+      text-decoration: none;
+      margin-right: 32px;
+      transition: all 0.5s ease;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include center;
+
+      &:hover {
+        color: #a3b9c6;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.image-block {
+  position: relative;
+}
+
+.bg-img-wrapper {
+  max-width: 600px;
+}
+
+.my-img-wrapper {
+  max-width: 300px;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+
+  img {
+    border: 30px solid white;
+  }
+}
